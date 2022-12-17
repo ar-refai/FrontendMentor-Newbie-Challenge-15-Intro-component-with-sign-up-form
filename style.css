@@ -1,0 +1,243 @@
+/* Coded By Abdelrahman Elrefai Tawfik */
+/* 15th Challenge -- newbie zone -- frontend mentor */
+
+/* ********************* */
+/* Colors */
+/* ********************* */
+
+:root {
+    /* Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    /* Secondary */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+/* ********************* */
+/* Fonts */
+/* ********************* */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ********************* */
+/* General Styling */
+/* ********************* */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition:.2s all;
+}
+
+/* ********************* */
+/* Body Styling */
+/* ********************* */
+body {
+    height: 100vh;
+    font-family:'Poppins' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--Red);
+    background-image: url(images/bg-intro-mobile.png);
+
+}
+
+.intro-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 330px;
+    margin:50px auto;
+}
+/* *************** */
+/* head styling */
+/* *************** */
+
+.head-sec {
+    margin: 40px auto 20px auto;
+}
+.head-sec h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+.head-sec p {
+    font-size: 17px;
+    width: 92%;
+    margin: 20px auto;
+    opacity: .8;
+    line-height: 1.6;
+
+}
+/* *************** */
+/* form styling */
+/* *************** */
+.price {
+    background-color: var(--Blue);
+    padding:20px 60px;
+    border-radius: 10px;
+    font-weight: 100;
+    box-shadow: 0px 8px 2px #55555555;
+    line-height: 1.5;
+
+}
+.price span {
+    font-weight: bold;
+}
+.form-sec .container {
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    padding:25px;
+    width: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.form .input-field {
+    width: 100%;
+    position: relative;
+}
+.form input {
+    width: 100%;
+    padding:15px 25px; 
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: start;
+    border:1px solid var(--Grayish-Blue);
+}
+
+.form .submit {
+    border: 0;
+    background-color: var(--Green);
+    box-shadow:0px 6px 6px hsla(154, 59%, 51%, 55%); ;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+.form .submit:hover {
+    background-color: hsla(154, 59%, 51%, 55%);;
+}
+.form-sec p {
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--Grayish-Blue);
+}
+.form-sec p span {
+    color: var(--Red);
+    font-weight: bold;
+
+}
+
+.form span {
+    display: none;
+    color: var(--Red);
+    font-size: 12px;
+    position: relative;
+    top:10px;
+    right: 10px;
+    padding-bottom: 10px;
+    text-align:right;
+    font-weight: 600;
+    font-style: italic;
+
+}
+.fname-error,
+.lname-error,
+.email-error,
+.password-error {
+    display: none;
+    align-self:center ;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.error {
+    border-color: var(--Red) !important;
+}
+.no-error {
+    border-color: var(--Grayish-Blue) !important;
+}
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+/* *************** */
+/* Responsive styling */
+/* *************** */
+
+@media screen and (min-width:1400px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/bg-intro-desktop.png);
+        background-size: cover;
+    }
+    .intro-page {
+        max-width: 75%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        align-items: center;
+    }
+    /* *************** */
+    /* head styling */
+    /* *************** */
+
+    .head-sec {
+        margin: 60px auto 40px auto;
+        text-align: start;
+    }
+
+    .head-sec h1 {
+        font-size: 55px;
+        line-height: 1;
+    }
+
+    .head-sec p {
+        margin: 20px 0;
+        font-size: 19px;
+
+}
+/* *************** */
+/* form styling */
+/* *************** */
+.form-sec .container {
+    padding:55px 40px;
+}
+.form input {
+    padding:20px 25px; 
+}
+.fname-error,
+.lname-error,
+.email-error,
+.password-error {
+    top: 20%;
+}
+
+}

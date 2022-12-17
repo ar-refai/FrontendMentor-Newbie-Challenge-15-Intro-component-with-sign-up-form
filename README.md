@@ -1,2 +1,3 @@
-# FrontendMentor-Newbie-Challenge-15-Intro-component-with-sign-up-form
-Designing A Responsive Intro page with Sign-Up Form Using HTML , CSS , JS, FlexBox and Grid
+# Frontend Mentor - Intro component with sign up form
+
+![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
